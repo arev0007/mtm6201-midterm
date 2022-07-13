@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bbf03006dd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-contact">
+        <header>
+            <div class="logo-img">
+                <img src="images/logo-salasanmarco-web2.jpg" alt="logo">
+            </div>
+            <h1>Contact</h1>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a class ="active" href="home.html">Home</a> </li>
+                        <li><a class ="active"href="event.html">Event</a> </li>
+                        <li><a class ="active"href="#">About</a> </li>
+                        <li><a class ="active" href="#">Services</a> </li>
+                        <li><a class ="active"href="#">Gallery</a> </li>
+                        <li><a class ="active"href="#">Testimonials</a> </li>
+                        <li><a class ="active" href="contact.html">Contact</a> </li>
+                    </ul>
+                    </nav> 
+            </div>
+            <div class="banner">
+                  <img src="images/contact/contact.jpg" alt="logo">
+            </div>
+        </header>
+        <div class="faq">
+            <h2>FAQ</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum culpa expedita minus numquam perspiciatis? 
+            Neque praesentium saepe omnis ullam incidunt eaque porro suscipit. Quo corporis ut fugit! Iure, recusandae velit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum culpa expedita minus numquam perspiciatis? 
+            Neque praesentium saepe omnis ullam incidunt eaque porro suscipit. Quo corporis ut fugit! Iure, recusandae velit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum culpa expedita minus numquam perspiciatis? 
+            Neque praesentium saepe omnis ullam incidunt eaque porro suscipit. Quo corporis ut fugit! Iure, recusandae velit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum culpa expedita minus numquam perspiciatis? 
+            Neque praesentium saepe omnis ullam incidunt eaque porro suscipit. Quo corporis ut fugit! Iure, recusandae velit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum culpa expedita minus numquam perspiciatis? 
+            Neque praesentium saepe omnis ullam incidunt eaque porro suscipit. Quo corporis ut fugit! Iure, recusandae velit.</p>
+        </div>
+        <div class="map-contact">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11204.712326919398!2d-75.7124116!3d45.4057484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe24d54bea478a22e!2sSala%20San%20Marco%20Event%20%26%20Conference%20Centre!5e0!3m2!1ses!2sca!4v1657677988409!5m2!1ses!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="feedback">
+            <h2>Feedback</h2>
+        </div>
+        <div class="contact-form">
+            <div role="form" aria-autocomplete="both" class="contact-section">
+                <h2>Contact Us</h2>
+                <!-- Creates label for each section of the form -->
+                <form action="thanks.html">
+                  <label for="yourfullname">Full Name</label>
+                  <input type="text" id="yourfullname" name="yourfullname" placeholder="Full Name">
+                  <label for="youremail">Email</label>
+                  <input type="text" id="youremail" name="youremail" placeholder="Email">
+                  <label for="phonenumber">Phone Number</label>
+                  <input type="number" id="phonenumber" name="phonenumber" placeholder="Phone Number">
+                  <label for="ext">Ext</label>
+                  <input type="number" id="ext" name="ext" placeholder="ext">
+                </form>
+            </div>
+            <div class="detail-event">
+                <h2>Event Details</h2>
+                <form action="thanks.html" method="post">
+                    <label for="event">Event Type</label>
+                    <select id="event" name="event">
+                      <option value="social">Social</option>
+                      <option value="wedding">Wedding</option>
+                      <option value="corporate">Corporate</option>
+                    </select>
+                    <label for="day">Event Day</label>
+                    <input type="date" data-date-inline-picker="true" />
+                    <label for="time">Start Time:</label>
+                    <input type="time" id="time input" name="time input:">                   
+                    <label for="people">Number of People</label>
+                    <select id="people" name="people">
+                      <option value="number1"></option>
+                      <option value="number1">10-50</option>
+                      <option value="number2">100-150</option>
+                      <option value="number3">200-500</option>
+                    </select>
+                    <label for="room">Room</label>
+                    <select id="room" name="room">
+                      <option value="number1"></option>
+                      <option value="number1">Room 1</option>
+                      <option value="number2">Room 2</option>
+                      <option value="number3">Room 3</option>
+                    </select>
+                    <label for="information">Additional Information</label>
+                  <textarea id="information" name="information" placeholder="Message"></textarea>
+                  <label for="room">How did you hear about us?</label>
+                    <select id="room" name="room">
+                      <option value="number1"></option>
+                      <option value="number1">Social Media</option>
+                      <option value="number2">Website</option>
+                      <option value="number3">Recomendation</option>
+                    </select>
+                  <button type="submit">Submit</button>
+                  </form>
+            </div>
+        </div>
+        <footer>
+            <div class="socials">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="contactus">
+            Contact us
+            215 Preston St, Ottawa, ON K1R 7R1
+            (613) 238-6063
+            
+            <info@salasanmarco.ca/div>
+            <div class="job">
+            <p>We are always looking for talent</p>
+            talent@salasanmarco.ca          
+            </div>    
+        </footer>
+    </div>
+</body>
+</html>
