@@ -296,6 +296,7 @@ img{
    position: relative;
    left:0;
    top: 25px;
+   width: 260px;;
 }
 
 .socials li{
@@ -308,7 +309,6 @@ img{
     left: 50px;
     
 }
-
 
 
 }
