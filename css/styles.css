@@ -289,6 +289,7 @@ img{
     position: relative;
     top: 600px;
     left:250px;
+    display: flex;
 }
 
 .socials{
@@ -298,24 +299,16 @@ img{
 }
 
 .socials li{
-    float: left;
+  float: left;
 }
 
 .contactus{
     position: relative;
     top:0;
     left: 50px;
-    float: left;
-}
-
-.map{
-    float: left;
     
 }
 
-map iframe{
-    width:0px;
-    height: 200px;
-}
+
 
 }
