@@ -192,7 +192,7 @@ h1, .events, .upcomingevents, .about, .map{
 
 .events .events-headlines{
     position: relative;
-    top: 400px;
+    top: 350px;
 }
 .event-box{
     position: relative;
@@ -214,6 +214,10 @@ h1{
 h2{
     text-align: center;
     color: #956B06;
+}
+.wedding-info h3{
+    position: relative;
+    top: 100px;
 }
 .package-img img{
     height: 150px;
@@ -310,7 +314,7 @@ img{
 }
 
 map iframe{
-    width:10px;
+    width:0px;
     height: 200px;
 }
 
