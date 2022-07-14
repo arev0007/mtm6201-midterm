@@ -32,14 +32,15 @@ background-color: #E2D7D3;
 .banner video{
     display: none;
 }
-/* The title, events, upcoming events, about and map are hidden for mobile style */
-h1, .events, .upcomingevents, .about, .map{
+
+
+.room, .upcoming-packages, .packages-event{
     display: none;
 }
-/* Icon is hidden for mobile style */
-.navbar i{
-    display: none;
-}
+
+
+
+
 /* Apply margin to the navigation bar */
 .navbar{
     margin: 30px;
@@ -77,7 +78,7 @@ h1, .events, .upcomingevents, .about, .map{
     display: none;
 }
 
-.main-nav {
+/*.main-nav {
     box-shadow: 0px 5px 10px 0px #212121;
     position: fixed;
     width: 100%;
@@ -86,7 +87,7 @@ h1, .events, .upcomingevents, .about, .map{
     opacity: 0.85;
     height: 50px;
     z-index: 12;
-  }
+  } */
   .navbar-container {
     display: flex;
     justify-content: space-between;
@@ -119,3 +120,58 @@ h1, .events, .upcomingevents, .about, .map{
     font-weight: 500;
     transition: color 0.3s ease-in-out;
   }
+
+  .menu-items a:hover {
+    color: #117964;
+    transition: color 0.3s ease-in-out;
+  }
+
+
+
+
+
+  /* Add border to separate the footer */
+.company-contact{
+    border-top: 1px solid #E2E1D6;
+    width: 100%;
+    height:1090px;
+}
+/* Add margin to the contact us section */
+.contactus{
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+/* Add a specific colour for title and paragraph  */
+.contactus h3, p{
+    color: #E2E1D6 ;
+}
+/* Change the size of the title */
+.contactus h3{
+    font-size: medium;
+}
+/* Change the size of the paragraphs */
+.contactus p{
+    font-size: smaller;
+}
+/* The social icons is positioned on the right side */
+.socials{
+    position: absolute;
+    right: 15px;
+}
+/* Change the colour and size of social media icons */
+.socials a {
+    color:#E2E1D6;
+    font-size:30px;
+    text-decoration: none;
+}
+/* Add margin and remove list for styling purposes */
+.socials ul{
+    list-style-type: none;
+    margin: 30px;
+}
+/* Remove border and add margin for styling purposes */
+.socials li{
+    border: none;
+    margin: 5px;
+}

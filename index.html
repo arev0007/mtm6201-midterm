@@ -16,84 +16,120 @@
 
 </head>
 <body>
+    <!--creates container class for styling purposes--> 
     <div class="container">
         <header>
+            <!--creates logo class for styling purposes--> 
             <div class="logo-img">
                 <img class="logo" src="images/logo.png" alt="logo">
             </div>
-            <div class="main-nav">
-                <div class="navbar-container container">
-                    <input type="checkbox" name="" id="">
-                    <div class="hamburger-lines">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
-                    </div>
-                </div>
-            </div>
+            <!--creates a navigation bar class for styling purposes--> 
             <div class="navbar">
+                <!-- Add menu icon to generate a vertical menu--> 
                 <i class="fa-solid fa-bars"></i>
                 <nav>
                     <ul>
-                        <li><a class ="active"href="#">Home</a> </li>
-                        <li><a class ="active"href="event.html">Event</a> </li>
-                        <li><a class ="active"href="#">About</a> </li>
-                        <li><a class ="active"href="#">Services</a> </li>
-                        <li><a class ="active"href="#">Gallery</a> </li>
-                        <li><a class ="active"href="#">Testimonials</a> </li>
-                        <li><a class ="active"href="contact.html">Contact</a> </li>
+                        <!--creates links for event and contact page--> 
+                        <li><a class ="active"href="#">Home</a></li>
+                        <li><a class ="active"href="event.html">Event</a></li>
+                        <li><a class ="active"href="#">About</a></li>
+                        <li><a class ="active"href="#">Services</a></li>
+                        <li><a class ="active"href="#">Gallery</a></li>
+                        <li><a class ="active"href="#">Testimonials</a></li>
+                        <li><a class ="active"href="contact.html">Contact</a></li>
                     </ul>
                     </nav> 
             </div>
+            <!--creates a banner class for styling purposes--> 
             <div class="banner">
-                <h1> Book Tour</h1>
+                <button onclick="document.location='event.html'" class="button button1">Book Tour</button>
+                <!-- add a video as banner--> 
                   <video autoplay muted>
                     <source src="images/home.mp4" type="video/mp4">
                   </video>
             </div>
         </header>
+        <!--creates events class for styling purposes--> 
         <div class="events">
-            <h2>Events</h2>
-            <h3>Happy Moments, Wonderful Memories</h3>
+            <div class="events-headlines">
+            <h1>Events</h1>
+            <h2>Happy Moments, Wonderful Memories</h2>
+            </div>
+            <div class="event-box">
+            <!--creates wedding option as a type of event--> 
             <div class="wedding-box">
+            <div class="wedding-info">   
             <h3>Wedding</h3>
-            <img src="images/home/wedding.jpg" alt="wedding">   
+            </div> 
+            <div class="wedding-img">
+            <img src="images/home/wedding.jpg" alt="wedding">
+            </div>
         </div>
+        <!--creates corporate option as a type of event--> 
         <div class="corporate-box">
+            <div class="corporate-info">
             <h3>Corporate</h3>
-            <img src="images/home/corporate.jpg" alt="corporate">   
+            </div>
+            <div class="corporate-img">
+            <img src="images/home/corporate.jpg" alt="corporate">
+            </div>   
         </div>
-        <div class="socials-box">
-            <h3>Wedding</h3>
+        <!--creates socials option as a type of event--> 
+        <div class="social-box">
+            <div class="social-info">
+            <h3>Social</h3>
+            </div>
+            <div class="social-img">
             <img src="images/home/socials.jpg" alt="socials">
+            </div>
         </div>
+       <!--creates socials option as a type of event--> 
         <div class="upcoming-box">
+            <div class="upcomingevents-info">
             <h3>Upcoming Events</h3>
+            </div>
+            <div class="upcomingevents-img">
             <img src="images/home/upcomingevents.jpg" alt="upcoming events">
+            </div>
         </div>
+        <!--creates the package option by adding an image to show that customers can personalise their events--> 
         <div class="package-box">
+            <div class="package-info">
             <h3>Package</h3>
-            <img src="images/home/package.jpg" alt="wedding">   
+            </div>
+            <div class="package-img">
+            <img src="images/home/package.jpg" alt="wedding">
+            </div>  
            </div>
         </div>
+    </div>
+         <!--creates upcoming events option by adding an image to show future events --> 
         <div class="upcomingevents">
-            <img src="images/home/upcomingevents.jpg" alt="wedding">
+            <h2> Upcoming Events</h2>
+            <img src="images/home/uesection.jpg" alt="wedding">
         </div>
+        <!--creates a preview about section -->
         <div class="about">
             <img src="images/home/aboutsection.jpg" alt="wedding">
+            <div class="about-info">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, hic expedita? 
             Autem iste quibusdam pariatur optio repudiandae velit quo, cupiditate temporibus doloremque ratione, 
             ut consectetur consequuntur doloribus ipsa libero nostrum!</p>
+            </div>
         </div>
+        <!-- creates footer class for styling purposes -->
         <footer class="company-contact">
+            <!-- creates social media class for styling purposes -->
             <div class="socials">
                 <ul>
+                    <!-- Add social media links of the company that will be opened in a new window -->
                     <li><a href="https://www.instagram.com/salasanmarco/"  target="_blank" class="fa-brands fa-instagram"></a></li>
                      <li><a href="https://www.facebook.com/salasanmarcobanquet/"  target="_blank" class="fa-brands fa-facebook-f"></a></li> 
                      <li><a href="https://www.linkedin.com/company/sala-san-marco/about/" target="_blank" class="fa-brands fa-linkedin-in"></a></li>   
                 </ul>
-            
+
             </div>
+            <!-- creates contact class for styling purposes -->
             <div class="contactus">
             <h3>Contact us</h3>
             <p>215 Preston St, 
@@ -101,6 +137,7 @@
                 (613) 238-6063
                 info@salasanmarco.ca</p>
             </div>
+            <!-- creates map class for styling purposes -->
             <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11204.712326919398!2d-75.7124116!3d45.4057484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe24d54bea478a22e!2sSala%20San%20Marco%20Event%20%26%20Conference%20Centre!5e0!3m2!1ses!2sca!4v1657677988409!5m2!1ses!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>    

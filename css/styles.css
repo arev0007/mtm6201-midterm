@@ -5,10 +5,10 @@
 body{ 
     background-color: #212121;
     font-family: 'Josefin Sans', sans-serif;
+    max-width: 1200px;
 }
 /* Creates a container for styling purposes*/
 .container{
-    max-width: 1200px;
     margin: 0 auto;
     font-size: 16px;
 }
@@ -17,6 +17,7 @@ body{
     font-family: 'Roboto Slab', serif;
 }
 
+
 /* Mobile Styles - Home */
 /* colour and size are added for the header */
 header{
@@ -24,6 +25,11 @@ header{
     width: 100%;
     height:auto;
 }
+.main-nav .container input[type="checkbox"],
+.main-nav .container .hamburger-lines {
+    display: none;
+}
+
 /* Add background to the logo */
 .logo-img img{
 width: 100%;
@@ -34,7 +40,7 @@ background-color: #E2D7D3;
     display: none;
 }
 /* The title, events, upcoming events, about and map are hidden for mobile style */
-h1, .events, .upcomingevents, .about, .map{
+h1, button, .events, .upcomingevents, .about, .map{
     display: none;
 }
 /* Icon is hidden for mobile style */
@@ -119,7 +125,193 @@ h1, .events, .upcomingevents, .about, .map{
 
 
 
-@media (min-width: 0px) and (max-width: 650px) {
-   
+/* Media Query for Laptops and Desktops */
+@media screen and (min-width: 760px){
+.container{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
     
-    }
+}
+h1, .events, .upcomingevents, .about, .map{
+    display: block;
+}
+
+.banner video{
+    display: block;
+    position: absolute;
+    bottom: 150px;  
+}
+.logo-img{
+    width: 250px;
+    height:180px;
+    position: relative;
+    bottom:10px;
+    z-index: 2;
+    margin-top: 5px;
+
+}
+.button{
+    display: block;
+    width: 300px;
+    height:80px;
+    position: relative;
+    top: 100px;
+    left: 60%;
+    z-index: 2;
+    font-size: 18px;
+}
+.button1{
+    background-color: #212121 ;
+    color: #fff;
+    border-style: none;
+}
+
+.navbar{
+    position: relative;
+    left: 25%;
+    top: 300px;
+    z-index:2;
+}
+
+.navbar li{
+    float: left;
+    border: none;
+}
+  
+.navbar a{
+    font-size: 1.5em;
+}
+
+.events{
+    position:relative;
+    left: 250px;
+    margin: 20px;
+
+}
+
+.events .events-headlines{
+    position: relative;
+    top: 400px;
+}
+.event-box{
+    position: relative;
+    top: 400px;
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-areas:
+    "wedding-box corporate-box social-box upcoming-box package-box";
+    grid-gap: 5px;
+    margin-left: 0;
+    margin-bottom: 0;
+    height: 350px;
+    border-bottom: 1px solid #956B06;
+}
+h1{
+    text-align: center;
+    color:#E2E1D6;
+}
+h2{
+    text-align: center;
+    color: #956B06;
+}
+.package-img img{
+    height: 150px;
+}
+.event-box img{
+    object-fit: cover;
+    height: 150;
+    opacity: 0.6;
+}
+
+img{
+    width: 100%;
+}
+
+.event-box > .wedding-info, .corporate-info, .social-info, .upcomingevents-info, .package-info{
+    position: relative;
+    left: 5px;
+    top: 110px;
+    z-index:2;
+}
+.event-box h3{
+    color: #E2E1D6;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align:justify;
+    text-align: center;
+ 
+}
+
+.upcomingevents{
+    position: relative;
+    top: 450px;
+    left:250px;
+    height:auto;
+    border-bottom: 1px solid #956B06;
+    margin: 10px;
+}
+
+.about{
+    height:350px;
+        position:relative;
+        top:500px;
+        padding:25px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        left:250px;
+}
+
+/* Adjust about image */
+.about img{
+    margin-left:30px;
+
+}
+/* Adjust the the size of the image placed in about section */
+.about img, .about-info{
+    width:500px;
+    height:320px;
+}
+/* Adjust text*/
+.about-info p{
+    padding: 10px;
+}
+
+
+
+.company-contact{
+ 
+    position: relative;
+    top: 600px;
+    left:250px;
+}
+
+.socials{
+   position: relative;
+   left:0;
+   top: 25px;
+}
+
+.socials li{
+    float: left;
+}
+
+.contactus{
+    position: relative;
+    top:0;
+    left: 50px;
+    float: left;
+}
+
+.map{
+    float: left;
+    
+}
+
+map iframe{
+    width:10px;
+    height: 200px;
+}
+
+}
