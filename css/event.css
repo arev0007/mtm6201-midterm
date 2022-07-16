@@ -6,6 +6,7 @@ body{
     background-color: #212121;
     font-family: 'Josefin Sans', sans-serif;
     max-width: 1200px;
+   
 }
 /* Creates a container for styling purposes*/
 .container{
@@ -17,7 +18,6 @@ body{
     font-family: 'Roboto Slab', serif;
 }
 
-
 /* Mobile Styles - Home */
 /* colour and size are added for the header */
 header{
@@ -25,63 +25,151 @@ header{
     width: 100%;
     height:auto;
 }
-.main-nav .container input[type="checkbox"],
-.main-nav .container .hamburger-lines {
-    display: none;
-}
-
 /* Add background to the logo */
 .logo-img img{
 width: 100%;
 background-color: #E2D7D3;
 }
 /* The video is hidden for mobile style */
-.banner video{
+.banner {
     display: none;
 }
-/* The title, events, upcoming events, about and map are hidden for mobile style */
-h1, button, .events, .upcomingevents, .about, .map{
-    display: none;
+
+/* The nav content is positioned on the ritght side */
+.main-nav{
+    position:relative;
+    left: 450px;
+    bottom: 350px;
+    margin: 0px;
+    z-index: 2;
+    color: #212121;
+    cursor: pointer;       
 }
-/* Icon is hidden for mobile style */
-.navbar i{
-    display: none;
-}
-/* Apply margin to the navigation bar */
-.navbar{
-    margin: 30px;
-}
-/* remove the dots of the list and determine the size*/
-.navbar nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-/* Add a coloured border to separate the navigation bar list */
-.navbar li{
-    border-bottom: 1px solid #956B06; ;
-}
-/* Apply hover for better user experience */
-.navbar li a:hover {
-    background-color: #272626;
-}
-/* Specify fundamental styles for the nav items */
-.navbar a{
-    color:#956B06;
+/* Apply style to the hamburguer menu icon */
+.nav__hamburguer {
+    opacity: 1;
     text-decoration: none;
-    display: block;
-    text-align: left;
-    padding: 15px 20px;
-    text-decoration: none; 
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: 2em;;
+    background: #212121;
+    border-radius: 0%;
+    text-align: center;
+    padding: 18px;
+    color: #E2E1D6;
+} 
+
+/* move menu offscreen */
+.nav__mainmenu {
+    opacity: 0;
+    visibility: none;
+    list-style-type: none;
+    position: fixed;
+    top: 20px;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      
+    align-items: left;
+    color: #25310c;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.19);
+    border: 1px solid rgba(24, 23, 23, 0.096); /* part of glass morphism effect */
+    background: rgb(19, 18, 18);    
+     
 }
+
+/* Activate the listcontainer. */
+.nav__listcontainer:focus .nav__mainmenu,
+.nav__listcontainer:focus-within .nav__mainmenu {
+    visibility: visible;
+    opacity: 1;
+    top: -40px;
+    right: 0px;
+    width: 320px;
+    height: 100%;
+}
+/* Apply style to the items container*/
+.nav__listcontainer:focus .nav__mainmenu,
+.nav__listcontainer:focus-within .nav__mainmenu {
+        background: rgba(17, 17, 17, 0.7);
+        backdrop-filter: blur(10px);
+}
+
+/* Add border to separate items and align the list on the left side*/
+.nav__item {
+    margin-right: 0;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #956B06 ;
+}
+/* Remove underline*/
+.nav__link{
+    color: #956B06;
+    text-decoration: none;
+    font-size: 24px;
+}
+/* Apply margin to separate the hamburguer icon */
+.nav__item:first-child {
+    margin-top: 50px;
+  }
+/* Apply style to the list items*/
+  .nav__link:hover,
+  .nav__link:focus {
+      opacity: 0.8;
+      color: #121212;
+  
+  }
+  /* Set the colour of the items*/
+.nav__item .nav__link:hover {
+    color: #956B06;
+}
+ /* Add colour and margin and align the main heading*/
+h1{
+    text-align: center;
+    color: #956B06;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+ /* Add colour to the second heading */
+h2{
+    text-align: center;
+    color: #956B06;
+}
+ /* Apply padding and margin, colour and align the description content*/
+.description-event p{
+    text-align: center;
+    color: #956B06;
+    padding:30px;
+    margin-top: 0px;
+}
+ /* Room elements are hidden*/
+.room{
+    display: none;
+}
+/* upcoming packages, event packages and map content are hidden*/
+.upcoming-packages, .packages-event, .map{
+    display: none;
+}
+/* Some room images are hidden*/
+.room-1-wed img:nth-child(2), img:nth-child(3), .room-2-wed, .room-3-wed, 
+.room-1-corp img:nth-child(2), .room-1-corp img:nth-child(3), .room-2-corp, .room-3-corp,
+.room-1-social img:nth-child(2), .room-1-social img:nth-child(3), .room-2-social,
+.room-3-social{
+    display: none;
+}
+
+/* Images that are visible for event mobile */
+.rooms-wed img:first-child, .room-1-corp img:first-child, .room-1-social img:first-child {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px;
+   
+}
+
 /* Add border to separate the footer and use flexboxs to organize social media icons and contact us section*/
 .company-contact{
     border-top: 1px solid #E2E1D6;
     width: 100%;
-    height:150px;
+    height:auto;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -119,108 +207,4 @@ h1, button, .events, .upcomingevents, .about, .map{
     border: none;
     margin: 5px;
 }
-
-/***************************************************************/
-
-/* The nav content is positioned on the ritght side */
-.main-nav{
-    position:relative;
-    left: 450px;
-    bottom: 280px;
-    margin: 0px;
-    z-index: 2;
-    color: #212121;
-    cursor: pointer;       
-}
-/* Apply style to the hamburguer menu icon */
-.nav__hamburguer {
-    display: flex;
-    opacity: 1;
-    text-decoration: none;
-    font-size: 2em;;
-    background: #212121;
-    border-radius: 0%;
-    text-align: center;
-    padding: 18px;
-    color: #E2E1D6;
-} 
-
-/* making the hamburguer icon visible */
-.nav__mainmenu{
-    display: flex;
-    opacity: 1;     
-    }
-
-/* move menu offscreen */
-.nav__mainmenu {
-    opacity: 0;
-    visibility: none;
-    list-style-type: none;
-    position: fixed;
-    top: 20px;
-    z-index: -1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;      
-    align-items: left;
-    color: #25310c;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.19);
-    border: 1px solid rgba(24, 23, 23, 0.096); /* part of glass morphism effect */
-    background: rgb(19, 18, 18);    
-     
-}
-
-
-/* Activate the listcontainer. */
-.nav__listcontainer:focus .nav__mainmenu,
-.nav__listcontainer:focus-within .nav__mainmenu {
-    visibility: visible;
-    opacity: 1;
-    top: -40px;
-    right: 0px;
-    width: 320px;
-    height: 100%;
-}
-/* Apply style to the items container*/
-.nav__listcontainer:focus .nav__mainmenu,
-.nav__listcontainer:focus-within .nav__mainmenu {
-        background: rgba(17, 17, 17, 0.7);
-        backdrop-filter: blur(10px);
-}
-
-/* Add border to separate items, align the list on the left side*/
-.nav__item {
-    margin-right: 0;
-    padding: 20px;
-    text-align: left;
-    border-bottom: 1px solid #956B06 ;
-}
-/* Remove underline*/
-.nav__link{
-    color: #956B06;
-    text-decoration: none;
-    font-size: 24px;
-}
-/* Apply margin to separate the hamburguer icon */
-.nav__item:first-child {
-    margin-top: 50px;
-  }
-
-.nav__link:hover,
-.nav__link:focus {
-    opacity: 0.8;
-    color: #121212;
-
-}
-
-.nav__item:hover{
-    opacity: 0.8;
-    color: #121212;
-}
-.nav__item .nav__link:hover {
-    background-color: #272626;
-    color: #956B06;
-}
-
-
 
