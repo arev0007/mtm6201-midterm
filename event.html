@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event page</title>
-    <link href="css/event.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bbf03006dd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="css/event.css" rel="stylesheet">
 </head>
 <body>
     <div class="container-event">
@@ -15,30 +21,47 @@
                 <img src="images/logo.png" alt="logo">
             </div>
             <h1>Events</h1>
-            <div class="main-nav">
-                <div class="navbar-container container">
-                    <input type="checkbox" name="" id="">
-                    <div class="hamburger-lines">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="navbar">
-                <i class="fa-solid fa-bars"></i>
-                <nav>
-                    <ul>
-                        <li><a class ="active" href="home.html">Home</a> </li>
-                        <li><a class ="active"href="event.html">Event</a> </li>
-                        <li><a class ="active"href="#">About</a> </li>
-                        <li><a class ="active" href="#">Services</a> </li>
-                        <li><a class ="active"href="#">Gallery</a> </li>
-                        <li><a class ="active"href="#">Testimonials</a> </li>
-                        <li><a class ="active" href="contact.html">Contact</a> </li>
+
+            <nav class="main-nav">              
+               
+                <div class="nav__menucontainer">
+                  <div class="nav__listcontainer" tabindex="0">
+                    <ul class="nav__mainmenu" id="navmenu">
+                      <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="event.html" class="nav__link">Event</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="#" class="nav__link">About</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="#" class="nav__link">Services</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="#" class="nav__link">Gallery</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="#" class="nav__link">Testimonials</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="#" class="nav__link">Contact</a>
+                      </li>
                     </ul>
-                    </nav> 
-            </div>
+                    <a id="menu" href="#navmenu" title="menu" class="nav__hamburguer">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                  </div>
+                  <div class="icon-box">
+                  <a href="#!" title="close menu" class="nav__menuclose"></a>
+                </div>
+                </div>
+              
+              </nav>
+
+
+        
             <div class="banner">
                 <h2> Book Tour</h2>
                   <video autoplay muted>

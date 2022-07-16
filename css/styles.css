@@ -77,11 +77,13 @@ h1, button, .events, .upcomingevents, .about, .map{
     text-transform: uppercase;
     font-weight: bold;
 }
-/* Add border to separate the footer */
+/* Add border to separate the footer and use flexboxs to organize social media icons and contact us section*/
 .company-contact{
     border-top: 1px solid #E2E1D6;
     width: 100%;
     height:150px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 /* Add margin to the contact us section */
 .contactus{
@@ -100,11 +102,6 @@ h1, button, .events, .upcomingevents, .about, .map{
 /* Change the size of the paragraphs */
 .contactus p{
     font-size: smaller;
-}
-/* The social icons is positioned on the right side */
-.socials{
-    position: absolute;
-    right: 15px;
 }
 /* Change the colour and size of social media icons */
 .socials a {
@@ -125,13 +122,14 @@ h1, button, .events, .upcomingevents, .about, .map{
 
 
 
+
+
 /* Media Query for Laptops and Desktops */
 @media screen and (min-width: 760px){
 .container{
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    
 }
 h1, .events, .upcomingevents, .about, .map{
     display: block;
@@ -149,7 +147,6 @@ h1, .events, .upcomingevents, .about, .map{
     bottom:10px;
     z-index: 2;
     margin-top: 5px;
-
 }
 .button{
     display: block;
@@ -187,7 +184,6 @@ h1, .events, .upcomingevents, .about, .map{
     position:relative;
     left: 250px;
     margin: 20px;
-
 }
 
 .events .events-headlines{
@@ -244,7 +240,6 @@ img{
     font-weight: bold;
     text-align:justify;
     text-align: center;
- 
 }
 
 .upcomingevents{
@@ -258,13 +253,13 @@ img{
 
 .about{
     height:350px;
-        position:relative;
-        top:500px;
-        padding:25px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        left:250px;
+    position:relative;
+    top:500px;
+    padding:25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    left:250px;
 }
 
 /* Adjust about image */
@@ -281,11 +276,7 @@ img{
 .about-info p{
     padding: 10px;
 }
-
-
-
 .company-contact{
- 
     position: relative;
     top: 600px;
     left:250px;
@@ -307,7 +298,6 @@ img{
     position: relative;
     top:0;
     left: 50px;
-    
 }
 
 
