@@ -296,6 +296,7 @@ h2{
 .wedding-info h3{
     position: relative;
     top: 100px;
+    color:#E2D7D3;
 }
 .package-img img{
     height: 150px;
@@ -324,6 +325,35 @@ img{
     text-align: center;
 }
 
+.wedding-img:hover, .corporate-img:hover, .social-img:hover, .upcomingevents-img:hover, .package-img:hover{
+    background-color: #212121 ;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    transform: scale(1);
+    animation: light 1.5s infinite alternate;
+    opacity: 0.7;
+}
+.wedding-info h3:hover{
+    color:#956B06;
+}
+
+.wedding-img:hover, .corporate-img:hover, .social-img:hover, .upcomingevents-img:hover, .package-img:hover:hover {
+    transform: scale(1.03);
+ }
+ @keyframes light {
+    0% {
+       -webkit-box-shadow: 0px 0px 10px 0px rgba(190,77,227,0);
+       -moz-box-shadow: 0px 0px 10px 0px rgba(190,77,227,0);
+       box-shadow: 0px 0px 10px 0px rgba(190,77,227,0);
+    }
+    100% {
+       -webkit-box-shadow: 0px 0px 10px 0px rgb(219, 217, 206);
+       -moz-box-shadow: 0px 0px 10px 0px rgb(219, 217, 206);
+       box-shadow: 0px 0px 10px 0px rgb(219, 217, 206);
+    }
+ }
 .upcomingevents{
     position: relative;
     top: 450px;
@@ -392,7 +422,4 @@ img{
 
  
 
-
-
-  
   
