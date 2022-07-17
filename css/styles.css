@@ -131,15 +131,17 @@ h1, button, .events, .upcomingevents, .about, .map{
     display: flex;
     flex-wrap: wrap;
 }
+/* Headings and sections are displayed to be available on Desktop */
 h1, .events, .upcomingevents, .about, .map{
     display: block;
 }
-
+/* Banner is available on Desktop */
 .banner video{
     display: block;
     position: absolute;
     bottom: 150px;  
 }
+/* The logo is positioned on the left side*/
 .logo-img{
     width: 250px;
     height:180px;
@@ -148,6 +150,7 @@ h1, .events, .upcomingevents, .about, .map{
     z-index: 2;
     margin-top: 5px;
 }
+/*  Use z-index to adjust the button in the banner */
 .button{
     display: block;
     width: 180px;
@@ -158,6 +161,7 @@ h1, .events, .upcomingevents, .about, .map{
     z-index: 2;
     font-size: 18px;
 }
+/* Add style to the button and apply animation */
 .button1{
     background-color: #212121 ;
     color: #fff;
@@ -166,7 +170,7 @@ h1, .events, .upcomingevents, .about, .map{
     transition: all 0.5s;
   
 }
-
+/* Button animation */
 .button1::before {
     content: '';
     position: absolute;
@@ -179,10 +183,12 @@ h1, .events, .upcomingevents, .about, .map{
     opacity: 0.1;
     transition: all 0.3s;
   }
+  /* Button animation */
   .button1:hover::before {
     opacity: 0 ;
     transform: scale(0.5,0.5);
   }
+  /* Button animation */
   .button1::after {
     content: '';
     position: absolute;
@@ -196,23 +202,24 @@ h1, .events, .upcomingevents, .about, .map{
     border: 1px solid #956B06;
     transform: scale(1.2,1.2);
   }
+  /* Button animation */
   .button1:hover::after {
     opacity: 1;
     transform: scale(1,1);
   }
-
+/* The position of the navigation is on the banner */
 .navbar{
     position: relative;
     left: 25%;
     top: 300px;
     z-index:2;
 }
-
+/* Navigation bar - position */
 .navbar li{
     float: left;
     border: none;
 }
-  
+  /* Adjust the size of the navigation bar items */
 .navbar a{
     font-size: 1.5em;
 }
@@ -303,7 +310,7 @@ h2{
 }
 .event-box img{
     object-fit: cover;
-    height: 150;
+    height: 150px;
     opacity: 0.6;
 }
 
