@@ -379,6 +379,7 @@ img{
     justify-content: center;
     align-items: center;
     left:250px;
+    flex-direction: row-reverse;
 }
 
 /* Adjust about image */
